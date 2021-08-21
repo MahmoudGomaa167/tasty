@@ -1,0 +1,57 @@
+@import 'variables';
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Fonts/poppins/Poppins.eot');
+    src: url('Fonts/poppins/Poppins.eot?#iefix') format('embedded-opentype'),
+        url('Fonts/poppins/Poppins.woff2') format('woff2'),
+        url('Fonts/poppins/Poppins.woff') format('woff'),
+        url('Fonts/poppins/Poppins.ttf') format('truetype'),
+        url('Fonts/poppins/Poppins.svg#Poppins-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background-color: $bodyBackgroundColor;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 70%;
+}
+
+.section-container{
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:auto;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0
+}
+
+img{
+    max-width: 100%;
+}
+
+.button{
+    border: none;
+    color: #fff;
+    background-color: $greenColor;
+    border-radius: 8px;
+    padding: 12px 16px;
+    transition: all 0.25s ease-in-out;
+    &:hover{
+        background-color: $darkGreenColor;
+    }
+}
+

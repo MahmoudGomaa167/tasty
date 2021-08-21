@@ -1,0 +1,31 @@
+.about-section{
+    padding-top: 128px;
+    padding-bottom: 64px;
+    .about__image{
+        flex: 0 0 40%;
+        margin-right: 50px;
+        img{
+            border-radius: 8px;
+        }
+    }
+    .about__info{
+        flex: 0 0 42%;
+        h6{
+            color: $greenColor;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        h2{
+            color: $blackColor;
+            font-weight: bold;
+            line-height: 1.6;
+            font-size: 36px;
+            margin-bottom: 32px;
+        }
+        p{
+            color: $grayColor;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+    }
+}

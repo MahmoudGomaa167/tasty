@@ -1,0 +1,59 @@
+nav{
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    background-color: $bodyBackgroundColor;
+    left: 0;
+    right: 0;
+    top: 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav__logo{
+            a{
+                color: $grayColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .nav__list{
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
+                .list__item{
+                    margin-right: 40px;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $grayColor;
+                        transition: all 0.25s ease-in-out;
+                        &.active, &:hover{
+                            color: $greenColor;
+                        }
+                    }
+                }
+
+                .icon-moon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $grayColor;
+                    cursor: pointer;
+                    transition: all 0.25s ease-in-out;
+                    &:hover{
+                        color: $greenColor;
+                    }
+                }
+            }
+        }
+        .nav__toggle{
+            display: none;
+        }
+    }
+}

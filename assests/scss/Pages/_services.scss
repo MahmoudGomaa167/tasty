@@ -1,0 +1,43 @@
+.services-section{
+    padding-top: 128px;
+    padding-bottom: 64px;
+    .services__header{
+        text-align: center;
+        margin: auto;
+        flex: 0 0 100%;
+        h6{
+            color: $greenColor;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        h2{
+            color: $blackColor;
+            font-weight: bold;
+            line-height: 1.6;
+            font-size: 36px;
+            margin-bottom: 60px;
+        }
+    }
+    .services__item{
+        flex: 0 0 28%;
+        text-align: center;
+        svg{
+            fill: $greenColor;
+            width: 64px;
+            height: 64px;
+            margin-bottom: 16px;
+        }
+        h4{
+            color: $blackColor;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        p{
+            color: $grayColor;
+            line-height: 1.6;
+            font-weight: normal;
+        }
+    }
+}

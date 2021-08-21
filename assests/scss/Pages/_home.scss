@@ -1,0 +1,30 @@
+header{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .section-container{
+        justify-content: space-around;
+        .home__intro{
+            flex: 0 0 37%;
+            .intro__header{
+                color: $greenColor;
+                font-size: 64px;
+                font-weight: bold;
+                margin-bottom: 8px;
+                line-height: 1.6;
+            }
+            .intro__caption{
+                color: $blackColor;
+                font-weight: bold;
+                line-height: 1.6;
+                font-size: 36px;
+                margin-bottom: 32px;
+            }
+        }
+        .home__image{
+            flex: 0 0 49%;
+        }
+
+    }
+}
