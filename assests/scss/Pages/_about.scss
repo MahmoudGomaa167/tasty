@@ -15,16 +15,10 @@
             line-height: 1.6;
             margin-bottom: 8px;
         }
-        h2{
-            color: $blackColor;
-            font-weight: bold;
-            line-height: 1.6;
-            font-size: 36px;
+        .section__subtitle{
             margin-bottom: 32px;
         }
-        p{
-            color: $grayColor;
-            line-height: 1.6;
+        .section__description{
             margin-bottom: 24px;
         }
     }

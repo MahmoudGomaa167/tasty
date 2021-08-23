@@ -6,6 +6,7 @@ nav{
     left: 0;
     right: 0;
     top: 0;
+    z-index: 10000;
     .container{
         display: flex;
         justify-content: space-between;
@@ -16,6 +17,10 @@ nav{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition: all 0.25s ease-in-out;
+                &:hover{
+                    color: $greenColor;
+                }
             }
         }
         .nav__list{
@@ -27,12 +32,7 @@ nav{
                 padding: 0;
                 .list__item{
                     margin-right: 40px;
-                    a{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        color: $grayColor;
-                        transition: all 0.25s ease-in-out;
+                    .item__link{
                         &.active, &:hover{
                             color: $greenColor;
                         }

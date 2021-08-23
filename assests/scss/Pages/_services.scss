@@ -10,11 +10,7 @@
             line-height: 1.6;
             margin-bottom: 8px;
         }
-        h2{
-            color: $blackColor;
-            font-weight: bold;
-            line-height: 1.6;
-            font-size: 36px;
+        .section__subtitle{
             margin-bottom: 60px;
         }
     }
@@ -27,17 +23,9 @@
             height: 64px;
             margin-bottom: 16px;
         }
-        h4{
-            color: $blackColor;
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 8px;
-            line-height: 1.6;
-        }
-        p{
-            color: $grayColor;
-            line-height: 1.6;
+        .section__description{
             font-weight: normal;
         }
+        
     }
 }

@@ -1,0 +1,29 @@
+.application-section{
+    padding-top: 128px;
+    padding-bottom: 64px;
+    .section-container{
+        .application__image{
+            flex: 0 0 40%;
+        }
+        .application__info{
+            flex: 0 0 44%;
+            h6{
+                color: $greenColor;
+                line-height: 1.6;
+                margin-bottom: 8px;
+            }
+            .section__subtitle{
+                margin-bottom: 24px;
+            }
+            .section__description{
+                margin-bottom: 40px;
+            }
+            a{
+                display: inline-flex;
+                align-items: center;
+                max-width: 29%;
+                margin-right: 8px;
+            }
+        }
+    }
+}
