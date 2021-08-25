@@ -2,25 +2,33 @@
     background-color: #1D2521;
     nav{
         background-color: #1D2521;
-        .nav__logo{
-            a{
-                color: #C7D1CC;
+        .container{
+            .nav__logo{
+                a{
+                    color: #C7D1CC;
+                }
             }
-        }
-        .icon-sun{
-            color: #C7D1CC;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            transition: all 0.25s ease-in-out;
-            &:hover{
-                color: $greenColor;
+            .nav__list{
+                .nav__menu{
+                    background-color: #1D2521;
+                }
             }
-        }
-        .icon-bars{
-            color: #fff;
             
+            .icon-sun{
+                color: #C7D1CC;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: all 0.25s ease-in-out;
+                &:hover{
+                    color: $greenColor;
+                }
+            }
+            .icon-bars{
+                color: #fff;
+                
+            }
         }
     }
 

@@ -18,6 +18,7 @@ $(document).ready(function(){
             $('body, html').animate({
                 scrollTop: sectionOffset
             }, 2000);
+            $('.nav__menu').removeClass('show-menu');
         });
     }
     
@@ -56,5 +57,23 @@ $(document).ready(function(){
             scrollTop: homeOffset
         }, 2000);
     });
+
+    // Nav Toggler
+    $('.nav__toggle').click(function(){
+        $('.nav__menu').toggleClass('show-menu');
+    });
+
+
+    // Scroll Reveal Animation Library
+    let sr = ScrollReveal({
+        origin: 'top',
+        distance: '30px',
+        duration: 2000,
+        reset: true
+    });
+
+    sr.reveal(`.home__intro, .home__image, .about__image, .about__info, .services__header, .services__item, .menu__header, .menu__item, .application__image, .application__info, .contact__info, .contact__button, .footer__item`,{
+        interval: 200
+    })
     
 })

@@ -4,6 +4,7 @@
     .section-container{
         .contact__info{
             flex: 0 0 62%;
+            transition: all 0.4s ease-in-out;
             h6{
                 color: $greenColor;
                 line-height: 1.6;
@@ -15,6 +16,7 @@
         }
         .contact__button{
             margin: auto;
+            transition: all 0.4s ease-in-out;
         }
     }
 }

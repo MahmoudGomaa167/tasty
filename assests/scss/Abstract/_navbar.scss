@@ -24,7 +24,7 @@ nav{
             }
         }
         .nav__list{
-            ul{
+            .nav__menu{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -62,7 +62,30 @@ nav{
     nav{
         .container{
             .nav__list{
-                display: none;
+                .nav__menu{
+                    flex-direction: column;
+                    position: fixed;
+                    top: -100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #fff;
+                    width: 100%;
+                    border-radius: 0 0 16px 16px;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    transition: top 0.5s ease-in-out;
+                    .list__item{
+                        margin-bottom: 15px;
+                    }
+                    .icon-moon,
+                    .icon-sun{
+                       position: absolute;
+                       right: 20px;
+                       top: 5px;
+                    }
+                }
+                .show-menu{
+                    top: 64px;
+                }
             }
             .nav__toggle{
                 display: flex;
