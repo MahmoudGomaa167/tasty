@@ -1,31 +1,80 @@
 .services-section{
     padding-top: 128px;
     padding-bottom: 64px;
-    .services__header{
-        text-align: center;
-        margin: auto;
-        flex: 0 0 100%;
-        h6{
-            color: $greenColor;
-            line-height: 1.6;
-            margin-bottom: 8px;
+    .section-container{
+        .services__header{
+            text-align: center;
+            margin: auto;
+            flex: 0 0 100%;
+            h6{
+                color: $greenColor;
+                line-height: 1.6;
+                margin-bottom: 8px;
+            }
+            .section__subtitle{
+                margin-bottom: 60px;
+            }
         }
-        .section__subtitle{
-            margin-bottom: 60px;
+        .services__item{
+            flex: 0 0 28%;
+            text-align: center;
+            svg{
+                fill: $greenColor;
+                width: 64px;
+                height: 64px;
+                margin-bottom: 16px;
+            }
+            .section__description{
+                font-weight: normal;
+            }
+            
         }
     }
-    .services__item{
-        flex: 0 0 28%;
-        text-align: center;
-        svg{
-            fill: $greenColor;
-            width: 64px;
-            height: 64px;
-            margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px){
+    .services-section{
+        .section-container{
+            .services__item{
+                flex: 0 0 31%;
+            }
         }
-        .section__description{
-            font-weight: normal;
-        }
-        
     }
+}
+
+@media screen and (max-width: 468px){
+    .services-section{
+        padding-top: 64px;
+        padding-bottom: 32px;
+        .section-container{
+            .services__header{
+                .section__subtitle{
+                    font-size: 24px;
+                }
+            }
+            .services__item{
+                flex: 0 0 100%;
+                margin-bottom: 30px;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services-section{
+        .section-container{
+            .services__item{
+                h4{
+                    font-size: 16px;
+                }
+                .section__description{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
 }

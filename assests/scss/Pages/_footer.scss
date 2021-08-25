@@ -71,3 +71,41 @@ footer{
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    footer{
+        .section-container{
+            .footer__item{
+                flex: 0 0 31%;
+                margin-bottom: 24px;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 468px) {
+    footer{
+        .section-container{
+            .footer__item{
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    footer{
+        .section-container{
+            .copyright{
+                font-size: 14px;
+                margin-top: 40px;
+            }
+            .developer{
+                font-size: 14px;
+            }
+        }
+    }
+}

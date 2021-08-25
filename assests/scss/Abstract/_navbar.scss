@@ -57,3 +57,19 @@ nav{
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    nav{
+        .container{
+            .nav__list{
+                display: none;
+            }
+            .nav__toggle{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+    }
+}

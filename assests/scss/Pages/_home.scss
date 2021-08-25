@@ -24,3 +24,56 @@ header{
 
     }
 }
+
+@media screen and (max-width:768px){
+    header{
+        .section-container{
+            .home__intro{
+                flex: 0 0 47%;
+            }
+            .home__image{
+                flex: 0 0 39%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 468px){
+    header{
+        height: calc(100vh + 64px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .section-container{
+            .home__intro{
+                flex: 0 0 100%;
+                margin-bottom: 30px;
+                .intro__header{
+                    font-size: 36px;
+                }
+                .section__subtitle{
+                    font-size: 24px;
+                    max-width: 55%;
+                }
+            }
+            .home__image{
+                flex: 0 0 69%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    header{
+        .section-container{
+            .home__intro{
+                .section__subtitle{
+                    max-width: 81%;
+                }
+            }
+            .home__image{
+                flex: 0 0 100%;
+            }
+        }
+    }
+}

@@ -27,3 +27,54 @@
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .application-section{
+        .section-container{
+            .application__image{
+                flex: 0 0 48%;
+            }
+            .application__info{
+                flex: 0 0 48%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .application-section{
+        padding-top: 64px;
+        padding-bottom: 32px;
+        .section-container{
+            .application__image{
+                order: 2;
+                margin: auto;
+            }
+            .application__info{
+                order: 1;
+                margin: auto;
+                text-align: center;
+                flex: 0 0 100%;
+                margin-bottom: 30px;
+                .section__subtitle{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .application-section{
+        .section-container{
+            .application__image{
+                flex: 0 0 100%;
+            }
+            .application__info{
+                a{
+                    max-width: 40%;
+                }
+            }
+        }
+    }
+}
