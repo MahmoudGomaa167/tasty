@@ -69,7 +69,7 @@ $(document).ready(function(){
         origin: 'top',
         distance: '30px',
         duration: 2000,
-        reset: true
+        reset: false
     });
 
     sr.reveal(`.home__intro, .home__image, .about__image, .about__info, .services__header, .services__item, .menu__header, .menu__item, .application__image, .application__info, .contact__info, .contact__button, .footer__item`,{
